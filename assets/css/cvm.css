@@ -140,10 +140,10 @@ section > div {
   padding: 20px 16px; }
   section > div blockquote {
     margin: 0; }
-    section > div blockquote p#macitation {
+    section > div blockquote p.citation {
       font-style: italic;
       color: #8c8c8c; }
-    section > div blockquote span#moi {
+    section > div blockquote span.auteur {
       font-size: .85em;
       color: #ff6600; }
   section > div.item {
@@ -162,8 +162,7 @@ section.presentation {
   background-color: #f9f9fb; }
 
 .item-content {
-  display: none;
-  font-size: .88em; }
+  display: none; }
   .item-content i {
     color: #ff6600;
     font-size: 1.2em; }
