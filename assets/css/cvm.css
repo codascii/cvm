@@ -1,19 +1,20 @@
 header {
   background-color: #ff6600;
   position: relative;
-  height: 100px; }
+  height: 100px;
+  z-index: 500; }
   header div#profil {
     display: flex;
     position: absolute;
-    left: 10px;
-    bottom: -30px; }
+    left: 16px;
+    bottom: -40px; }
     header div#profil img {
       border-radius: 50%;
       width: 80px;
       height: 80px;
       border: 10px solid #ff6600; }
     header div#profil div#nom {
-      padding-top: 30px; }
+      padding: 16px 0 0 16px; }
       header div#profil div#nom h1, header div#profil div#nom h3 {
         margin: 0;
         font-weight: normal; }
@@ -124,7 +125,7 @@ footer {
   text-align: center;
   color: white;
   font-size: .95em;
-  padding: 10px 0; }
+  padding: 20px 0; }
   footer p {
     margin: 0; }
 
@@ -136,18 +137,29 @@ body {
 
 section > div {
   border-bottom: 1px solid #fff0e6;
-  padding: 20px 30px; }
+  padding: 20px 16px; }
+  section > div blockquote {
+    margin: 0; }
+    section > div blockquote p#macitation {
+      font-style: italic;
+      color: #8c8c8c; }
+    section > div blockquote span#moi {
+      font-size: .85em;
+      color: #ff6600; }
   section > div.item {
-    cursor: pointer; }
+    cursor: pointer;
+    color: #4d4d4d; }
     section > div.item h4 {
       display: inline-block;
-      margin: 0 0 0 30px;
+      margin: 0 0 0 16px;
       font-weight: normal; }
     section > div.item.selected {
       background-color: #ff6600;
       color: #ffffff;
       border-bottom: none;
       padding-bottom: 22px; }
+section.presentation {
+  background-color: #f9f9fb; }
 
 .item-content {
   display: none;
