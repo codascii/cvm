@@ -143,6 +143,8 @@ section > div {
     section > div blockquote p.citation {
       font-style: italic;
       color: #8c8c8c; }
+    section > div blockquote a {
+      text-decoration: none; }
     section > div blockquote span.auteur {
       font-size: .85em;
       color: #ff6600; }
