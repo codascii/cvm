@@ -1,0 +1,54 @@
+.timeline {
+    position: relative;
+    padding-left: 15px;
+
+    .block {
+        padding: 5px;
+        position: relative;
+        background-color: white;
+
+        .content {
+            padding: 10px 20px;
+            background-color: lighten($main-color, 30%);
+            position: relative;
+            border-radius: 6px;
+
+            &::before {
+                content: " ";
+                height: 0;
+                position: absolute;
+                top: 22px;
+                width: 0;
+                z-index: 1;
+                left: -9px;
+                border: medium solid white;
+                border-width: 10px 10px 10px 0;
+                border-color: transparent lighten($main-color, 30%) transparent transparent;
+            }
+
+            &::after {
+                content: '';
+                position: absolute;
+                width: 10px;
+                height: 10px;
+                top: 24px;
+                left: -29px;
+                background-color: white;
+                border: 2px solid $main-color;
+                border-radius: 50%;
+                z-index: 1;
+            }
+        }
+    }
+
+    &::after {
+        content: ' ';
+        position: absolute;
+        width: 2px;
+        background-color: $main-color;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        margin-left: -3px;
+    }
+}

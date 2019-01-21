@@ -1,0 +1,47 @@
+ul.competences {
+    margin: 0 auto;
+    padding-left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-align: center;
+
+    li {
+        list-style: none;
+        display: inline-block;
+
+        p {
+            margin: 10px auto 0 auto;
+        }
+
+        .progress {
+            display: -ms-flexbox;
+            display: flex;
+            height: 1rem;
+            overflow: hidden;
+            font-size: .75rem;
+            background-color: #ebebeb;
+            border-radius: .25rem;
+
+            .progress-bar {
+                display: -ms-flexbox;
+                display: flex;
+                -ms-flex-direction: column;
+                flex-direction: column;
+                -ms-flex-pack: center;
+                justify-content: center;
+                color: #fff;
+                text-align: center;
+                white-space: nowrap;
+                background-color: #007bff;
+                transition: width .6s ease;
+
+                &.bg-html-css { background-color: $bg-html-css; }
+                &.bg-javascript-jquery { background-color: $bg-javascript-jquery; }
+                &.bg-php-symfony { background-color: $bg-php-symfony; }
+                &.bg-c-cpp { background-color: $bg-c-cpp; }
+                &.bg-node-react { background-color: $bg-node-react; }
+            }
+        }
+    }
+}

@@ -1,0 +1,70 @@
+@media screen and (max-width:1367px) {
+    @import "tablette/header";
+    @import "tablette/timeline";
+    @import "tablette/competences";
+    @import "tablette/loisirs";
+    @import "tablette/footer";
+
+    section {
+
+        > div {
+            padding: 20px $space-separator;
+
+            blockquote {
+                margin: 0;
+
+                p.citation {
+                    font-style: italic;
+                    color: #8c8c8c;
+                    font-size: 1.7em;
+                }
+
+                a {
+                    text-decoration: none;
+                    font-size: 1.4em;
+                }
+
+                span.auteur {
+                    font-size: .85em;
+                    color: $main-color;
+                }
+            }
+
+            &#contact-content {
+                p{
+                  i {
+                      font-size: 4em;
+                  }
+
+                  a{ margin-top: 15px; font-size: 1em;}
+                }
+            }
+        }
+
+        &.presentation {
+            background-color: $bg-presentation;
+        }
+    }
+
+    .item-content{
+
+        i {
+            color: $main-color;
+            font-size: 1.2em;
+        }
+
+        a {
+            text-decoration: none;
+            color: darken($main-color, 10%);
+        }
+    }
+
+    .item-content.showed {
+        display: block;
+    }
+
+    .item-content i{
+        font-size: 1.1em;
+        margin-right: 10px;
+    }
+}

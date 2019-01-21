@@ -1,0 +1,23 @@
+header {
+    height: 100px;
+
+    div#profil {
+        left: $space-separator-tablette;
+        top: 20px;
+
+        img {
+            width: $image-size-tablette;
+            height: $image-size-tablette;
+            border: 10px solid $main-color;
+        }
+
+        div#nom {
+            padding: $padding-name-width-tablette 0 0 $padding-name-width-tablette;
+
+            h1 { font-size: 1.8em; }
+
+            h3 { font-size: 1.3em; }
+        }
+
+    }
+}

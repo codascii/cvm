@@ -13,8 +13,9 @@ body {
 }
 
 section {
+    z-index: 20;
+
     > div {
-        border-bottom: 1px solid lighten($main-color, 45%);
         padding: 20px $space-separator;
 
         blockquote {
@@ -23,10 +24,12 @@ section {
             p.citation {
                 font-style: italic;
                 color: #8c8c8c;
+                font-size: 1.7em;
             }
 
             a {
                 text-decoration: none;
+                font-size: 1.4em;
             }
 
             span.auteur {
@@ -36,20 +39,29 @@ section {
         }
 
         &.item {
-            cursor: pointer;
             color: #4d4d4d;
+            display: none;
 
             h4 {
                 display: inline-block;
                 margin: 0 0 0 $space-separator;
                 font-weight: normal;
             }
+        }
 
-            &.selected {
-                background-color: $main-color;
-                color: #ffffff;
-                border-bottom: none;
-                padding-bottom: 22px;
+        &#contact-content {
+          display: flex;
+          justify-content: space-around;
+          background-color: #1a1a1a;
+
+            p{
+              text-align: center;
+              i {
+                  color: $main-color;
+                  font-size: 5em;
+              }
+
+              a{ display: block; margin-top: 20px; font-size: 1.2em;}
             }
         }
     }
@@ -60,7 +72,6 @@ section {
 }
 
 .item-content{
-    display: none;
 
     i {
         color: $main-color;
@@ -81,3 +92,6 @@ section {
     font-size: 1.1em;
     margin-right: 10px;
 }
+
+@import 'responsive/tablette';
+@import 'responsive/mobile';
