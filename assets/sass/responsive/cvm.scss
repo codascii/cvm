@@ -1,0 +1,84 @@
+@import "cvm/vars";
+@import "cvm/header";
+@import "cvm/timeline";
+@import "cvm/competences";
+@import "cvm/loisirs";
+@import "cvm/footer";
+
+body {
+    padding: 0;
+    margin: 0;
+    font-size: .9em;
+    font-family: Arial, serif, sans-serif;
+}
+
+section {
+    > div {
+        border-bottom: 1px solid lighten($main-color, 45%);
+        padding: 20px $space-separator;
+
+        blockquote {
+            margin: 0;
+
+            p.citation {
+                font-style: italic;
+                color: #8c8c8c;
+            }
+
+            a {
+                text-decoration: none;
+            }
+
+            span.auteur {
+                font-size: .85em;
+                color: $main-color;
+            }
+        }
+
+        &.item {
+            cursor: pointer;
+            color: #4d4d4d;
+
+            h4 {
+                display: inline-block;
+                margin: 0 0 0 $space-separator;
+                font-weight: normal;
+            }
+
+            &.selected {
+                background-color: $main-color;
+                color: #ffffff;
+                border-bottom: none;
+                padding-bottom: 22px;
+            }
+        }
+    }
+
+    &.presentation {
+        background-color: $bg-presentation;
+    }
+}
+
+.item-content{
+    display: none;
+
+    i {
+        color: $main-color;
+        font-size: 1.2em;
+    }
+
+    a {
+        text-decoration: none;
+        color: darken($main-color, 10%);
+    }
+}
+
+.item-content.showed {
+    display: block;
+}
+
+.item-content i{
+    font-size: 1.1em;
+    margin-right: 10px;
+}
+

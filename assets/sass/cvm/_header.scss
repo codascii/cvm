@@ -1,0 +1,41 @@
+header {
+    background-color: $main-color;
+    position: relative;
+    height: 100px;
+    z-index: 500;
+
+    div#profil {
+        display: flex;
+        position: absolute;
+        left: $space-separator;
+        bottom: -40px;
+
+        img {
+            border-radius: 50%;
+            width: 80px;
+            height: 80px;
+            border: 10px solid $main-color;
+        }
+
+        div#nom {
+            padding: $space-separator 0 0 $space-separator;
+
+            h1, h3 {
+                margin: 0;
+                font-weight: normal;
+            }
+
+            h1 {
+                font-size: 1.4em;
+                color: white;
+            }
+
+            h3 {
+                color: #3e3e41;
+            }
+        }
+
+    }
+}
+
+
