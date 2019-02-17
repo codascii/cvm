@@ -1,6 +1,5 @@
 @media screen and (max-width: 769px) {
     @import "mobile/header";
-    @import "mobile/timeline";
     @import "mobile/competences";
     @import "mobile/loisirs";
     @import "mobile/footer";
@@ -62,8 +61,7 @@
         }
     }
 
-    .item-content{
-
+    .item-content, .only-desktop{
         display: none;
     }
 }

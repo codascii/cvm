@@ -1,6 +1,5 @@
 @media screen and (max-width:1367px) {
     @import "tablette/header";
-    @import "tablette/timeline";
     @import "tablette/competences";
     @import "tablette/loisirs";
     @import "tablette/footer";
@@ -67,4 +66,6 @@
         font-size: 1.1em;
         margin-right: 10px;
     }
+
+    
 }
