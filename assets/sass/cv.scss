@@ -50,18 +50,20 @@ section {
         }
 
         &#contact-content {
-          display: flex;
-          justify-content: space-around;
-          background-color: #1a1a1a;
+            display: flex;
+            justify-content: space-around;
+            background-color: $bg-contact-section;
 
             p{
               text-align: center;
               i {
-                  color: $main-color;
                   font-size: 5em;
+                  color: lighten($main-color, 50%) !important;
               }
 
-              a{ display: block; margin-top: 20px; font-size: 1.2em;}
+              a{ 
+                display: block; margin-top: 20px; font-size: 1.2em;
+                color: lighten($main-color, 50%) !important;}
             }
         }
     }

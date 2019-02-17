@@ -7,7 +7,7 @@ header {
     div#profil {
         display: flex;
         position: absolute;
-        left: $space-separator;
+        left: 20px;
         top: 30px;
 
         img {
@@ -32,7 +32,7 @@ header {
 
             h3 {
                 font-size: 1.4em;
-                color: darken($main-color, 20%);
+                color: lighten($main-color, 40%);
             }
         }
 

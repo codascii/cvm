@@ -1,5 +1,5 @@
 header {
-  background-color: #ff6600;
+  background-color: #004AA3;
   position: relative;
   height: 130px;
   z-index: 500;
@@ -7,14 +7,14 @@ header {
 header div#profil {
   display: flex;
   position: absolute;
-  left: 200px;
+  left: 20px;
   top: 30px;
 }
 header div#profil img {
   border-radius: 50%;
   width: 150px;
   height: 150px;
-  border: 15px solid #ff6600;
+  border: 15px solid #004AA3;
 }
 header div#profil div#nom {
   padding: 30px 0 0 30px;
@@ -29,7 +29,7 @@ header div#profil div#nom h1 {
 }
 header div#profil div#nom h3 {
   font-size: 1.4em;
-  color: #993d00;
+  color: #70b1ff;
 }
 
 .timeline {
@@ -43,7 +43,8 @@ header div#profil div#nom h3 {
 }
 .timeline .block .content {
   padding: 10px 20px;
-  background-color: #ffc299;
+  background-color: white;
+  border: 2px solid #3d95ff;
   position: relative;
   border-radius: 6px;
 }
@@ -54,10 +55,10 @@ header div#profil div#nom h3 {
   top: 22px;
   width: 0;
   z-index: 1;
-  left: -9px;
+  left: -10px;
   border: medium solid white;
   border-width: 10px 10px 10px 0;
-  border-color: transparent #ffc299 transparent transparent;
+  border-color: transparent #3d95ff transparent transparent;
 }
 .timeline .block .content::after {
   content: "";
@@ -67,7 +68,7 @@ header div#profil div#nom h3 {
   top: 24px;
   left: -29px;
   background-color: white;
-  border: 2px solid #ff6600;
+  border: 2px solid #004AA3;
   border-radius: 50%;
   z-index: 1;
 }
@@ -75,7 +76,7 @@ header div#profil div#nom h3 {
   content: " ";
   position: absolute;
   width: 2px;
-  background-color: #ff6600;
+  background-color: #004AA3;
   top: 0;
   bottom: 0;
   left: 0;
@@ -183,7 +184,7 @@ section > div blockquote a {
 }
 section > div blockquote span.auteur {
   font-size: 0.85em;
-  color: #ff6600;
+  color: #004AA3;
 }
 section > div.item {
   color: #4d4d4d;
@@ -197,31 +198,32 @@ section > div.item h4 {
 section > div#contact-content {
   display: flex;
   justify-content: space-around;
-  background-color: #1a1a1a;
+  background-color: #282A2B;
 }
 section > div#contact-content p {
   text-align: center;
 }
 section > div#contact-content p i {
-  color: #ff6600;
   font-size: 5em;
+  color: #a3cdff !important;
 }
 section > div#contact-content p a {
   display: block;
   margin-top: 20px;
   font-size: 1.2em;
+  color: #a3cdff !important;
 }
 section.presentation {
   background-color: #f9f9fb;
 }
 
 .item-content i {
-  color: #ff6600;
+  color: #004AA3;
   font-size: 1.2em;
 }
 .item-content a {
   text-decoration: none;
-  color: #cc5200;
+  color: #003370;
 }
 
 .item-content.showed {
@@ -238,13 +240,12 @@ section.presentation {
     height: 100px;
   }
   header div#profil {
-    left: 120px;
     top: 20px;
   }
   header div#profil img {
     width: 130px;
     height: 130px;
-    border: 10px solid #ff6600;
+    border: 10px solid #004AA3;
   }
   header div#profil div#nom {
     padding: 25px 0 0 25px;
@@ -267,7 +268,6 @@ section.presentation {
   }
   .timeline .block .content {
     padding: 10px 20px;
-    background-color: #ffc299;
     position: relative;
     border-radius: 6px;
   }
@@ -281,7 +281,7 @@ section.presentation {
     left: -9px;
     border: medium solid white;
     border-width: 10px 10px 10px 0;
-    border-color: transparent #ffc299 transparent transparent;
+    border-color: transparent #3d95ff transparent transparent;
   }
   .timeline .block .content::after {
     content: "";
@@ -291,7 +291,7 @@ section.presentation {
     top: 24px;
     left: -29px;
     background-color: white;
-    border: 2px solid #ff6600;
+    border: 2px solid #004AA3;
     border-radius: 50%;
     z-index: 1;
   }
@@ -299,7 +299,7 @@ section.presentation {
     content: " ";
     position: absolute;
     width: 2px;
-    background-color: #ff6600;
+    background-color: #004AA3;
     top: 0;
     bottom: 0;
     left: 0;
@@ -397,7 +397,7 @@ section.presentation {
   }
   section > div blockquote span.auteur {
     font-size: 0.85em;
-    color: #ff6600;
+    color: #004AA3;
   }
   section > div#contact-content p i {
     font-size: 4em;
@@ -411,12 +411,12 @@ section.presentation {
   }
 
   .item-content i {
-    color: #ff6600;
+    color: #004AA3;
     font-size: 1.2em;
   }
   .item-content a {
     text-decoration: none;
-    color: #cc5200;
+    color: #003370;
   }
 
   .item-content.showed {
@@ -429,21 +429,17 @@ section.presentation {
   }
 }
 @media screen and (max-width: 769px) {
-  header {
-    height: 100px;
-  }
-  header div#profil {
-    left: 16px;
+  div#profil {
     top: 30px;
   }
-  header div#profil img {
-    width: 100px;
-    height: 100px;
+  div#profil img {
+    width: 80px;
+    height: 80px;
   }
-  header div#profil div#nom {
+  div#profil div#nom {
     padding: 16px 0 0 16px;
   }
-  header div#profil div#nom h1 {
+  div#profil div#nom h1 {
     font-size: 1.5em;
   }
   .timeline {
@@ -457,7 +453,6 @@ section.presentation {
   }
   .timeline .block .content {
     padding: 10px 20px;
-    background-color: #ffc299;
     position: relative;
     border-radius: 6px;
   }
@@ -471,7 +466,7 @@ section.presentation {
     left: -9px;
     border: medium solid white;
     border-width: 10px 10px 10px 0;
-    border-color: transparent #ffc299 transparent transparent;
+    border-color: transparent #3d95ff transparent transparent;
   }
   .timeline .block .content::after {
     content: "";
@@ -481,7 +476,7 @@ section.presentation {
     top: 24px;
     left: -29px;
     background-color: white;
-    border: 2px solid #ff6600;
+    border: 2px solid #004AA3;
     border-radius: 50%;
     z-index: 1;
   }
@@ -489,7 +484,7 @@ section.presentation {
     content: " ";
     position: absolute;
     width: 2px;
-    background-color: #ff6600;
+    background-color: #004AA3;
     top: 0;
     bottom: 0;
     left: 0;
@@ -574,7 +569,7 @@ section.presentation {
     z-index: 20;
   }
   section > div {
-    border-bottom: 1px solid #fff0e6;
+    border-bottom: 1px solid #8abfff;
     padding: 20px 16px;
   }
   section > div blockquote {
@@ -591,7 +586,7 @@ section.presentation {
   }
   section > div blockquote span.auteur {
     font-size: 0.85em;
-    color: #ff6600;
+    color: #004AA3;
   }
   section > div.item {
     display: block;
@@ -608,7 +603,7 @@ section.presentation {
     text-align: center;
   }
   section > div#contact-content p i {
-    color: #ff6600;
+    color: #004AA3;
     font-size: 5em;
   }
   section > div#contact-content p a {
