@@ -383,8 +383,8 @@ section.presentation {
     top: 30px;
   }
   div#profil img {
-    width: 80px;
-    height: 80px;
+    width: 50px;
+    height: 50px;
   }
   div#profil div#nom {
     padding: 16px 0 0 16px;
@@ -392,6 +392,7 @@ section.presentation {
   div#profil div#nom h1 {
     font-size: 1.5em;
   }
+
   ul.competences {
     margin: 0 auto;
     padding-left: 0;
